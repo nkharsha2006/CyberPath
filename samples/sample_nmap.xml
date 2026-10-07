@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" version="7.94">
+
+    <host>
+        <status state="up"/>
+
+        <address addr="192.168.1.100" addrtype="ipv4"/>
+
+        <hostnames>
+            <hostname name="test-server"/>
+        </hostnames>
+
+        <ports>
+
+            <port protocol="tcp" portid="22">
+                <state state="open"/>
+                <service
+                    name="ssh"
+                    product="OpenSSH"
+                    version="9.2"/>
+            </port>
+
+            <port protocol="tcp" portid="80">
+                <state state="open"/>
+                <service
+                    name="http"
+                    product="Apache httpd"
+                    version="2.4.57"/>
+            </port>
+
+            <port protocol="tcp" portid="443">
+                <state state="open"/>
+                <service
+                    name="https"
+                    product="nginx"
+                    version="1.24.0"/>
+            </port>
+
+        </ports>
+    </host>
+
+</nmaprun>

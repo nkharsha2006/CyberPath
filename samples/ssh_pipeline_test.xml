@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Oct  6 12:45:11 2026 as: /usr/lib/nmap/nmap -sV -p 22 -oX samples/ssh_pipeline_test.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sV -p 22 -oX samples/ssh_pipeline_test.xml 127.0.0.1" start="1791270911" startstr="Tue Oct  6 12:45:11 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1791270911" endtime="1791270912"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="10.3p1 Debian 5" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:10.3p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+</ports>
+<times srtt="151" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1791270912" timestr="Tue Oct  6 12:45:12 2026" summary="Nmap done at Tue Oct  6 12:45:12 2026; 1 IP address (1 host up) scanned in 0.36 seconds" elapsed="0.36" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
