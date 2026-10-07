@@ -163,7 +163,7 @@ requirements.txt
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CyberPath.git
+git clone https://github.com/nkharsha2006/CyberPath.git
 ```
 
 Enter the project:
